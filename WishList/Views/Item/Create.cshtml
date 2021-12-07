@@ -1,15 +1,11 @@
 ﻿@model WishList.Models.Item
 
 <h3>Add Item to wishlist</h3>
-<hr />
+
 <form asp-action="Create">
     <input asp-for="Description" />
     <span asp-validation-for="Description"></span>
     <button type="submit">Add Item</button>
-
-    <div class="form-group">
-        <input type="submit" value="Create" class="btn btn-primary" />
-    </div>
 </form>
 
 <div>
